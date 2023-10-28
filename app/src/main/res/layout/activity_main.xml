@@ -1,57 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@mipmap/img"
-    android:padding="50dp"
-    android:gravity="center"
-    tools:context=".MainActivity">
-
-
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-    tools:ignore="MissingConstraints">
-
-
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your password"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="251dp" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your username"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="180dp" />
+    android:padding="16dp"
+    android:gravity="center">
 
     <Button
+        android:id="@+id/btnKids"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="341dp" />
+        android:onClick="openCourses"
+        android:text="Kids" />
 
-    <TextView
-        android:id="@+id/helloWorldText"
-        android:layout_width="309dp"
-        android:layout_height="98dp"
-        android:layout_centerInParent="true"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/btnAdults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openCourses"
+        android:text="Adults" />
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
